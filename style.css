@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;0,900;1,500;1,900&display=swap');
+
+body, body * {
+    
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+ ::-webkit-scrollbar {
+    display:none;
+} 
+
+body {
+
+    font-family:'Figtree', sans-serif;
+    color: black;
+
+}
+
+section.intro {
+    
+    height: 85vh;
+    background-image: url(./assets/projets-plastiques/peinture-detail1.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 32px;
+    color: rgb(0, 0, 0);
+    
+    
+  
+
+}
+
+section.intro h1 {
+
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+
+section.intro div.column {
+
+    flex-direction: row;
+}
+
+section.intro div.left {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center; 
+    float: left;
+    padding-top: 60px;
+    /* color: red */
+    
+}
+
+section.intro div.right {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    
+} 
+
+section.intro div.right img {
+
+    width: 100%;
+
+}
+div.menu button {
+
+    appearance: none;
+    border: none;
+    background-color: rgb(113, 103, 161);
+    padding: 12px;
+    
+}
+
+div.menu button:hover {
+
+    background-color:  rgb(152, 143, 195);
+    
+
+}
+
+section.about {
+
+    height: 90vh;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.about h1 {
+
+    text-transform: uppercase;
+}
