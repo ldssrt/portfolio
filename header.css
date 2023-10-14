@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;0,900;1,500;1,900&display=swap');
+
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+
+}
+
+div.menu button {
+
+    appearance: none;
+    border: none;
+    background-color: rgb(18, 53, 133);
+    padding: 12px;
+    font-family:'Figtree', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+}
+
+div.menu button:hover {
+
+    background-color:  rgb(58, 88, 222);
+    
+
+}
