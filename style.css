@@ -105,14 +105,14 @@ a:visited {
 }
 
 .presentation2 {
-    /* background-color: aquamarine; */
+
     padding: 5px;
     border: 1.25px solid #1500ff;
     text-align: center;
-}
+  }
 
 .case {
-    margin-top: 7px;
+    margin-top: 5px;
     border: 1.25px solid #1500ff;
     padding: 10px;
 }
