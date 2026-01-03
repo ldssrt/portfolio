@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Corps de page */
+body {
+  font-family: "Jersey 25", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1500ff;
+  font-size: 20px;
+}
+
+/* En-tête */
+header {
+  background-color: #1500ff;
+  color: #fff;
+  /* padding: 20px; */
+  
+}
+
+header h1 {
+  /* margin-bottom: 25px; */
+  font-size: 65px;
+  padding: 20px;
+  text-align: right;
+}
+/* 
+.navbar {
+    width: 100%;
+    overflow: auto;
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  /* gap: 33%; */
+  margin: 0;
+  /* padding: 10px; */
+  font-size: 23px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+nav a {
+  color: #1500ff;
+  text-decoration: none;
+  /* float: center; */
+  padding: 12px;
+  /* width: 33.33%; */
+  text-align: center;
+  border: 1.25px solid #1500ff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: #1500ff;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+a:visited {
+  color: rgb(0, 0, 255);
+}
+.presentation {
+    /* background-color: aquamarine; */
+    margin-top: 5px;
+    border: 1.25px solid #1500ff;
+    text-align: center;
+}
+
+.presentation2 {
+    /* background-color: aquamarine; */
+    padding: 5px;
+    border: 1.25px solid #1500ff;
+    text-align: center;
+}
+
+.case {
+    margin-top: 7px;
+    border: 1.25px solid #1500ff;
+    padding: 10px;
+}
+
+.exp {
+    padding-top: 20px;
+    padding-bottom: 10px;
+ 
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 colonnes */
+  grid-template-rows: repeat(2, 400px);
+  /* 3 lignes de 100px */
+  gap: 0px;
+  /* espace entre les cellules */
+  width: 100%;
+}
+
+
+
+.cellule {
+  border: 1.25px solid #1500ff;
+  color: #1500ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #ffffff;
+  background-size: 0%;
+  text-align: center;
+  padding: 2px;
+}
+
+.cellule:hover {
+  border: 0px;
+  color: rgba(71, 56, 229, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 0px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .grille {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    height: 800px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grille {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    height: 1200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .grille {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    height: 1600px;
+  }
+}
+
+h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+h2{ 
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+/* p {
+  text-align: justify;
+} */
+
+/* Pied de page */
+footer {
+  height: 50px;
+  padding: 10px;
+  background-color: #1500ff;
+  color: white;
+  text-align: center;
+  /* font-family: "Jersey 20"; */
+  
+}
+
+
+.contenu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    /* border:1.25px solid #1500ff; */
+    max-height: 100%;
+}
+
+.texte {
+  width: 35%;
+  /* background-color: black; */
+  padding-left: 25px;
+}
+
+.image {
+  width: 65%;
+  padding: 10px;
+  /* justify-content: flex-end; */
+  /* background-color: aqua; */
+}
+
+.lien {
+  padding-left: 5px;
+}
+

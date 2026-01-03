@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrollbar{
+  scrollbar-color: blue;
+
+}
+
+/* Corps de page */
+body {
+  font-family: "Jersey 25", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1500ff;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+    overflow: visible;
+  }
+}
+
+/* En-tête */
+header {
+  background-color: #1500ff;
+  color: #fff;
+  /* padding: 20px; */
+  
+}
+
+header h1 {
+  /* margin-bottom: 25px; */
+  font-size: 65px;
+  padding: 20px;
+  text-align: right;
+}
+/* 
+.navbar {
+    width: 100%;
+    overflow: auto;
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  /* gap: 33%; */
+  margin: 0;
+  /* padding: 10px; */
+  font-size: 23px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+nav a {
+  color: #1500ff;
+  text-decoration: none;
+  /* float: center; */
+  padding: 12px;
+  /* width: 33.33%; */
+  text-align: center;
+  border: 1.25px solid #1500ff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: #1500ff;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 0, 255);
+}
+
+.presentation {
+    /* background-color: aquamarine; */
+    margin-top: 5px;
+    border: 1.25px solid #1500ff;
+    text-align: center;
+}
+
+.case {
+    margin-top: 5px;
+    border: 1.25px solid #1500ff;
+    padding: 10px;
+}
+
+.exp {
+    padding-top: 20px;
+ 
+}
+
+h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+h2{ 
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+h3 {
+  padding-bottom: 7px;
+}
+
+.second {
+  padding-top: 25px;
+}
+
+h4{
+  padding-bottom: 25px;
+}
+
+.credits {
+  padding-top: 20px;
+}
+
+.legend {
+  font-size: smaller;
+  padding-bottom: 5px;
+}
+
+/* Pied de page */
+footer {
+  height: 50px;
+  padding: 10px;
+  background-color: #1500ff;
+  color: white;
+  text-align: center;
+  /* font-family: "Jersey 20"; */
+}
+
+/* .row {
+  
+  display: flex;
+  margin-top: 5px;
+  border:1.25px solid #1500ff;
+} */
+
+.contenu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    border:1.25px solid #1500ff;
+    max-height: 100%;
+}
+
+
+.texte {
+  width: 40%;
+  /* background-color: black; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  overflow: scroll;
+  max-height: 75vh;
+}
+
+.image {
+  width: 60%;
+  padding: 10px; 
+  overflow: scroll;
+  max-height: 75vh;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.texte2 {
+  width: 30%;
+  /* background-color: black; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  overflow: scroll;
+  max-height: 75vh;
+}
+
+.image2 {
+  width: 70%;
+  padding: 10px; 
+  overflow: scroll;
+  max-height: 75vh;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+
+.imageInside {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 115, 120, 0.326);
+    
+    z-index: 2;
+}
+
+/* .droite {
+  align-content: right;
+} */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenu {
+    min-height: 63vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .texte {
+    font-size: 17px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    font-size: 13px;
+
+  }
+}
+
+@media (max-width: 700px) {
+      .texte,
+      .image {
+        flex: 1 1 100%;
+      }
+    }
+
+
+    @media (max-width: 700px) {
+      .texte2,
+      .image2 {
+        flex: 1 1 100%;
+      }
+    }
