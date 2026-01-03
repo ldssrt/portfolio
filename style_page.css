@@ -261,7 +261,7 @@ footer {
 @media (max-width: 768px) {
   .texte {
     font-size: 17px;
-    overflow: scroll;
+    overflow: visible;
   }
 }
 
